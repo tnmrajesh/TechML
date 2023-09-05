@@ -1,0 +1,22 @@
+PODS:
+  - MLEngine-iOS (1.0.8)
+
+DEPENDENCIES:
+  - MLEngine-iOS (from `https://github.com/tnmrajesh/TechML.git`, tag `1.0.8`)
+
+EXTERNAL SOURCES:
+  MLEngine-iOS:
+    :git: https://github.com/tnmrajesh/TechML.git
+    :tag: 1.0.8
+
+CHECKOUT OPTIONS:
+  MLEngine-iOS:
+    :git: https://github.com/tnmrajesh/TechML.git
+    :tag: 1.0.8
+
+SPEC CHECKSUMS:
+  MLEngine-iOS: 1185a374ae3fd8e295af5601e8127e228d4b29f8
+
+PODFILE CHECKSUM: eee97e768dd5d25587158fd8c68e7ff3b7186b5b
+
+COCOAPODS: 1.12.1

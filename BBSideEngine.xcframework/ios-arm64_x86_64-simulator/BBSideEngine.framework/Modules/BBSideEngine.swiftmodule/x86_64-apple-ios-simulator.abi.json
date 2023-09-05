@@ -2326,6 +2326,13 @@
         "moduleName": "BBSideEngine"
       },
       {
+        "kind": "Import",
+        "name": "TensorFlowLite",
+        "printedName": "TensorFlowLite",
+        "declKind": "Import",
+        "moduleName": "BBSideEngine"
+      },
+      {
         "kind": "TypeDecl",
         "name": "BBSideEngineManager",
         "printedName": "BBSideEngineManager",
@@ -5540,6 +5547,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "BBSideEngine"
+      },
+      {
+        "kind": "Import",
+        "name": "TensorFlowLite",
+        "printedName": "TensorFlowLite",
         "declKind": "Import",
         "moduleName": "BBSideEngine"
       },

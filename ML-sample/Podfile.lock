@@ -1,22 +1,37 @@
 PODS:
-  - MLEngine-iOS (1.0.0)
+  - MLEngine-iOS (1.0.2):
+    - TensorFlowLiteSwift
+  - TensorFlowLiteC (2.13.0):
+    - TensorFlowLiteC/Core (= 2.13.0)
+  - TensorFlowLiteC/Core (2.13.0)
+  - TensorFlowLiteSwift (2.13.0):
+    - TensorFlowLiteSwift/Core (= 2.13.0)
+  - TensorFlowLiteSwift/Core (2.13.0):
+    - TensorFlowLiteC (= 2.13.0)
 
 DEPENDENCIES:
-  - MLEngine-iOS (from `https://github.com/tnmrajesh/TechML.git`, tag `1.0.0`)
+  - MLEngine-iOS (from `https://github.com/tnmrajesh/TechML.git`, tag `1.0.2`)
+
+SPEC REPOS:
+  trunk:
+    - TensorFlowLiteC
+    - TensorFlowLiteSwift
 
 EXTERNAL SOURCES:
   MLEngine-iOS:
     :git: https://github.com/tnmrajesh/TechML.git
-    :tag: 1.0.0
+    :tag: 1.0.2
 
 CHECKOUT OPTIONS:
   MLEngine-iOS:
     :git: https://github.com/tnmrajesh/TechML.git
-    :tag: 1.0.0
+    :tag: 1.0.2
 
 SPEC CHECKSUMS:
-  MLEngine-iOS: 2c1af3f9f4c21ecfe97ff783c5dae5230172335c
+  MLEngine-iOS: 80bd2505507bad24cb88b13c3903a064ec97790f
+  TensorFlowLiteC: ac3334fa9dbc90e4744b4497312a393fd02b5408
+  TensorFlowLiteSwift: 1d8320fbf292054eb50ef0b347a4b17a92b49731
 
-PODFILE CHECKSUM: 6acd2d8182690ade2408774b3355cc5e6b10f56e
+PODFILE CHECKSUM: 4a53fed3cc982e2e9da0e243e57c799f7783f305
 
 COCOAPODS: 1.12.1

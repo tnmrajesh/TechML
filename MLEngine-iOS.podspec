@@ -13,7 +13,6 @@ Pod::Spec.new do |spec|
  spec.source       = { :git => "https://github.com/tnmrajesh/TechML.git", :tag => "#{spec.version}" }
    spec.ios.vendored_frameworks = 'BBSideEngine.xcframework'
   spec.swift_version = "5.0"
-    spec.prefix_header_contents = 'import TensorFlowLite'
-  # Specify the dependencies for your library.
+    
   spec.dependency 'TensorFlowLiteSwift'
 end

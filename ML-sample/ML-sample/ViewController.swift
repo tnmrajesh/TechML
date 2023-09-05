@@ -12,14 +12,48 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        // Usage
+//        if let mainAppWorkspacePath = findMainAppWorkspacePath() {
+//            print("Main App Workspace Path: \(mainAppWorkspacePath)")
+//            // Use mainAppWorkspacePath as needed
+//        } else {
+//            print("Main App Workspace not found.")
+//            // Handle the case when the workspace is not found
+//        }
+        
+        
         let shared = BBSideEngineManager.shared
         // Do any additional setup after loading the view.
         let mode: BBMode = .production
 //        let accessKey = isProductionMode ? "8b53824f-ed7a-4829-860b-f6161c568fad" : "9518a8f7-a55f-41f4-9eaa-963bdb1fce5f" //Production
 //        let accessKey = isProductionMode ? "1468afad-9890-431d-82d6-b8f68a924423" : "f49dccfb-edb9-4675-8cd6-a1b98be7270c" //Production
         shared.configure(accessKey: "8b53824f-ed7a-4829-860b-f6161c568fad", mode: mode, theme: .standard)
+        
+       
+
     }
 
+    
+
+    func findMainAppWorkspacePath() -> String? {
+        let fileManager = FileManager.default
+        let currentDirectory = FileManager.default.currentDirectoryPath
+
+        if let enumerator = fileManager.enumerator(atPath: currentDirectory) {
+            for case let path as String in enumerator {
+                print("path:",path)
+                if path.hasSuffix(".xcworkspace") {
+                    return (currentDirectory as NSString).appendingPathComponent(path)
+                }
+            }
+        }
+
+        return nil
+    }
+
+    
 
 }
 

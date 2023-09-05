@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "MLEngine-iOS"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "Powerful Real-Time Incident Detection, Prevention and Alerting"
   spec.description  = <<-DESC
                     The Flare SDK is an innovative solution that enables mobility providers, food couriers, and insurers to gain a deeper understanding of accidents like never before. With our real-time incident detection, prevention, and alerting capabilities, you can take your safety measures to the next level and offer enhanced safety features to your customers.
@@ -15,5 +15,5 @@ Pod::Spec.new do |spec|
   spec.swift_version = "5.0"
     spec.prefix_header_contents = 'import TensorFlowLite'
   # Specify the dependencies for your library.
-  s.dependency 'TensorFlowLiteSwift'
+  spec.dependency 'TensorFlowLiteSwift'
 end

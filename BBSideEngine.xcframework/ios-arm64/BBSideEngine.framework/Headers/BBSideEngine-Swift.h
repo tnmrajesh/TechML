@@ -301,7 +301,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BBSideEngine
 @property (nonatomic, copy) NSString * _Nonnull impactBody;
 @property (nonatomic, copy) NSString * _Nonnull impactBodySOS;
 @property (nonatomic) BOOL showLog;
-@property (nonatomic, copy) NSString * _Nonnull appType;
+@property (nonatomic, copy) NSString * _Nonnull appName;
 @property (nonatomic, copy) NSString * _Nonnull activity;
 @property (nonatomic) BOOL enable_flare_aware_network;
 @property (nonatomic) NSInteger low_frequency_intervals_seconds;
@@ -313,10 +313,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) BBSideEngine
 @end
 
 
+
 @interface BBSideEngineManager (SWIFT_EXTENSION(BBSideEngine))
 - (void)sideEventsListenerWithHandler:(void (^ _Nonnull)(BBResponse * _Nonnull))handler;
 @end
-
 
 
 
